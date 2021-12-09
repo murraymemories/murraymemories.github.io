@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.99e21970.chunk.css",
-    "main.js": "/static/js/main.57a4f71d.chunk.js",
-    "main.js.map": "/static/js/main.57a4f71d.chunk.js.map",
+    "main.css": "/static/css/main.c3bf95a0.chunk.css",
+    "main.js": "/static/js/main.3925de19.chunk.js",
+    "main.js.map": "/static/js/main.3925de19.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab610fe2.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab610fe2.js.map",
     "static/js/2.14cc440c.chunk.js": "/static/js/2.14cc440c.chunk.js",
     "static/js/2.14cc440c.chunk.js.map": "/static/js/2.14cc440c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.99e21970.chunk.css.map": "/static/css/main.99e21970.chunk.css.map",
-    "static/js/2.14cc440c.chunk.js.LICENSE.txt": "/static/js/2.14cc440c.chunk.js.LICENSE.txt"
+    "static/css/main.c3bf95a0.chunk.css.map": "/static/css/main.c3bf95a0.chunk.css.map",
+    "static/js/2.14cc440c.chunk.js.LICENSE.txt": "/static/js/2.14cc440c.chunk.js.LICENSE.txt",
+    "static/media/hills.f4903399.svg": "/static/media/hills.f4903399.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ab610fe2.js",
     "static/js/2.14cc440c.chunk.js",
-    "static/css/main.99e21970.chunk.css",
-    "static/js/main.57a4f71d.chunk.js"
+    "static/css/main.c3bf95a0.chunk.css",
+    "static/js/main.3925de19.chunk.js"
   ]
 }
