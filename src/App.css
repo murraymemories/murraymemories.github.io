@@ -3,6 +3,20 @@
     margin:  0;
 }
 
+@media only screen and ( max-width: 700px ) {
+
+    :root {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and ( min-width: 1800px ) {
+
+    :root {
+        font-size: 1.5em;
+    }
+}
+
 .App {
     overflow-x: hidden;
     display: grid;
@@ -18,6 +32,7 @@
     height: 100vh;
     grid-template-rows: auto 1fr 0 0;
     overflow-y: hidden;
+    text-align: center; 
 }
 
 h1 {
@@ -25,6 +40,7 @@ h1 {
     font-family: 'Pacifico', cursive, serif;
     color: var(--silhouette);
     z-index: 1;
+    line-height: 3.2rem;
 }
 
 h1#title {
@@ -48,11 +64,13 @@ h1#title {
 }
 
 .center-text {
+    margin: 1.5rem;
     display: grid;
     justify-items: center;
-    text-align: center;
-    margin-top: 1rem;
+    align-content: start;
     font-size: 1.32rem;
+    grid-gap: 1rem;
+    z-index: 1;
 }
 
 a {
@@ -73,15 +91,15 @@ svg {
 
 .clouds {
     display: grid;
-    transform: translateY(-90vh);
+    transform: translateY(calc(-100vh + 5rem));
 }
 
 .cloud {
     fill: white;
     opacity: 0.5;
-    height: 7rem;
+    height: 6rem;
     margin-top: -5rem;
-    animation: float calc(40s) linear infinite;
+    animation: float calc(20s) linear infinite;
 }
 
 @keyframes float {

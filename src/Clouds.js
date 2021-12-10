@@ -18,7 +18,7 @@ function Clouds() {
 	
 		<div className="clouds">
 
-			{ randints(0,2,Math.floor(window.screen.width/150)).map( x => clouds[x](rand()*100) ) }
+			{ randints(0,2,Math.floor(window.screen.width/200) + 5).map( x => clouds[x](rand()*100) ) }
 
 		</div>
 
