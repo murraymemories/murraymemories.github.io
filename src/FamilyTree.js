@@ -14,7 +14,9 @@ function FamilyTree() {
 	               
 	            <Top />
 	            
-	            <div style={{height: "1300vh"}}></div>
+	            <div>
+	            	
+	            </div>
 
 	        </div>
 	    </div>
