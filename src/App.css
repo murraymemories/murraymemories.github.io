@@ -3,18 +3,8 @@
     margin:  0;
 }
 
-@media only screen and ( max-width: 700px ) {
-
-    :root {
-        font-size: 0.5em;
-    }
-}
-
-@media only screen and ( min-width: 1800px ) {
-
-    :root {
-        font-size: 1.5em;
-    }
+:root {
+    font-size: clamp(0.5em, 3.6vmin, 2.5em);
 }
 
 .App {
@@ -38,9 +28,16 @@
 h1 {
     position: relative;
     font-family: 'Pacifico', cursive, serif;
-    color: var(--silhouette);
     z-index: 1;
     line-height: 3.2rem;
+}
+
+.App h1 {
+    color: var(--silhouette);
+}
+
+h1 a {
+    color: inherit;
 }
 
 h1#title {
@@ -49,7 +46,7 @@ h1#title {
 }
 
 #links {
-    margin-top: 3.2rem;
+    margin-top: 2.7rem;
     display: grid;
     grid-gap: 1rem;
     justify-items: center;
@@ -83,23 +80,31 @@ svg {
 }
 
 .hills {
-    width: calc( (100vw + 150rem) / 2 );
+    width: 100rem;
     min-width: 100vw;
-    transform: translateY( calc( (100vw + 150rem) / -25 ) );
+    transform: translateY( min( calc( 200rem / -25 ), 100vh ) );
     justify-self: left;
+}
+
+@media only screen and (max-width: 40rem) {
+    .hills {
+        margin-top: -3rem;
+    }
 }
 
 .clouds {
     display: grid;
     transform: translateY(calc(-100vh + 5rem));
+    height: 50vh;
+    grid-template-rows: repeat(20, 1fr);
 }
 
 .cloud {
     fill: white;
     opacity: 0.5;
     height: 6rem;
-    margin-top: -5rem;
-    animation: float calc(20s) linear infinite;
+    margin-top: -6rem;
+    animation: float 20s linear infinite;
 }
 
 @keyframes float {
@@ -110,4 +115,31 @@ svg {
     to {
         transform: translateX(calc( 5rem + 50vw));
     }
+}
+
+.family-tree {
+    overflow-x: hidden;
+}
+
+.black-bg {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background: #000000;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: 0 auto 1fr;
+    overflow-x: hidden;
+}
+
+.black-bg h1 {
+    color: white;
+    text-shadow: 0 0 0.43rem #fffb;
+}
+
+.stars {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
 }

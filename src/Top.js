@@ -5,7 +5,7 @@ function Top() {
     return (
         <div className="Top">
 
-            <h1 id="title"> Murray Memories </h1>
+            <h1 id="title"> <a href="/">Murray Memories</a> </h1>
             
         </div>
     );

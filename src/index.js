@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import FamilyTree from './FamilyTree';
 import About from './About';
 import {
   BrowserRouter,
@@ -14,6 +15,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/familytree" element={<FamilyTree />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
