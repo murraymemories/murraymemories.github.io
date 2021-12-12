@@ -1,24 +1,20 @@
 import './App.css';
 import Top from "./Top.js";
 import Stars from "./Stars.js";
+import { ReactComponent as Hills } from './hills.svg';
 
 
 function FamilyTree() {
 
 	return (
 		<div className="family-tree">
-			
-	    	<Stars />
-
-			<div className="black-bg">
 	               
-	            <Top />
-	            
-	            <div>
-	            	
-	            </div>
+            <Top />
+            
+            <div></div>
 
-	        </div>
+            <Hills />
+            
 	    </div>
 	);
 }
