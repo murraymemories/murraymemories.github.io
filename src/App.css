@@ -61,7 +61,8 @@ h1#title {
 }
 
 .center-text {
-    margin: 1.5rem;
+    padding: 1.5rem;
+    max-width: 100vw;
     display: grid;
     justify-items: center;
     align-content: start;
