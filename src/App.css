@@ -17,7 +17,7 @@
     --silhouette: #202036;
     font-family: "Readex Pro", sans-serif;
     background: rgb(253,62,45);
-    background: linear-gradient(0deg, rgba(253,62,45,1) -15%, rgba(233,143,59,1) 23%, rgba(183,218,216,1) 55%, rgba(34,193,195,1) 110%);
+    background: linear-gradient(0deg, rgba(253,62,45,1) -0%, rgba(233,143,59,1) 33%, rgba(183,218,216,1) 60%, rgba(34,193,195,1) 110%);
     width: 100%;
     height: 100vh;
     grid-template-rows: auto 1fr 0 0;
