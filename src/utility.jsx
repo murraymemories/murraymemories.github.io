@@ -6,4 +6,4 @@ const randfloat  = (a,b)   => rand() * (b - a) + a;
 const randints   = (a,b,n) => range(n).map( x => randint(a,b)   );
 const randfloats = (a,b,n) => range(n).map( x => randfloat(a,b) );
 
-export { rand, range, randint, randints, randfloats };
+export { rand, range, randint, randfloat, randints, randfloats };
