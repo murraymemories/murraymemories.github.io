@@ -1,13 +1,15 @@
-import { range, rand } from "./utility.jsx";
-import MemoryImg from "./MemoryImg.jsx";
+import { range, rand, randText } from "./utility.jsx";
 import { useState, useEffect } from 'react';
+import MemoryImg from "./MemoryImg.jsx";
+import DetailCard from "./DetailCard.jsx";
 
 
 function MemoryList() {
 
 	const dogUrl = "https://dog.ceo/api/breeds/image/random";
 
-	const [ srcs, setSrcs ] = useState( [] );
+	const [ srcs     , setSrcs      ] = useState( [] );
+	const [ detailObj, setDetailObj ] = useState( {} );
 
 	useEffect(  () => { ( async () => {
 
@@ -21,10 +23,13 @@ function MemoryList() {
     return (
 
     	<ul className="memory-list"> 
+    		
     		{ srcs.length
-    		? srcs.map( s => <MemoryImg key={ rand() } src={ s } /> )
+    		? srcs.map( s => <MemoryImg key={ rand() } text={ randText(40) } src={ s } detailCallback={ setDetailObj } /> )
     		: <li className="loading"> Loading... </li> }
     		<li></li>
+
+    		<DetailCard text={ detailObj.text } src={ detailObj.src } />
     	</ul>
 
     );

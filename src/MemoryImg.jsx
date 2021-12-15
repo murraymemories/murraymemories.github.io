@@ -2,5 +2,11 @@
 
 export default function MemoryImg( props ) {
 
-	return <li> <img src={ props.src } alt="memory" /> </li>
+	const onclick = () => props.detailCallback( { text: props.text, src: props.src } );
+
+	return (
+		<li> 
+			<img src={ props.src } alt="memory" onClick={ onclick } />
+		</li>
+	);
 }

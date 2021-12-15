@@ -8,6 +8,12 @@
     font-size: clamp(0.5em, 3.6vmin, 2.5em);
 }
 
+img {
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
 .App {
     overflow-x: hidden;
     display: grid;
@@ -175,6 +181,31 @@ li.loading {
 
 .memory-list li:last-child {
   flex-grow: 10;
+}
+
+.detail-card {
+    display: grid;
+    position: fixed;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 1000rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    justify-items: center;
+    grid-template-rows: auto min-content;
+    max-height: calc(100vh - 3.2rem);
+    width: 100%;
+}
+
+.detail-card img {
+    object-fit: contain;
+    align-self: center;
+}
+
+.detail-card p {
+    padding: 1rem;
 }
 
 /*
