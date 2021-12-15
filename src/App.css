@@ -140,13 +140,19 @@ svg {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     list-style: none;
     max-width: 120rem;
+    /*overflow: hidden;*/
 }
 
 li {
     height: 10rem;
     flex-grow: 1;
+}
+
+li.loading {
+    width: 100%;
 }
 
 .memory-list li img {
@@ -155,6 +161,16 @@ li {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    transform: scale(1.0);
+    transition: transform 0.2s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.memory-list li img:hover {
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .memory-list li:last-child {

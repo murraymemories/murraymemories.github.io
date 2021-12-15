@@ -17,11 +17,16 @@ function MemoryList() {
 
 	} )(); }, [] );
 
+
     return (
+
     	<ul className="memory-list"> 
-    		{ srcs.map( s => <MemoryImg key={ rand() } src={ s } /> ) }
+    		{ srcs.length
+    		? srcs.map( s => <MemoryImg key={ rand() } src={ s } /> )
+    		: <li className="loading"> Loading... </li> }
     		<li></li>
     	</ul>
+
     );
 }
 
