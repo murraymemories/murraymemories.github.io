@@ -426,10 +426,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="285.43945"
-     inkscape:cy="438.49476"
+     inkscape:cx="409.94999"
+     inkscape:cy="324.16111"
      inkscape:document-units="mm"
-     inkscape:current-layer="g1065"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="3440"
@@ -1204,7 +1204,7 @@
          transform="translate(50.098749,21.947353)" />
       <path
          id="path1027"
-         style="fill:#e3e2db;fill-opacity:1;stroke:#000000;stroke-width:0.334933;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         style="fill:#e3dedb;fill-opacity:1;stroke:#000000;stroke-width:0.334933;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
          d="m 152.05223,95.207838 c -1.7872,0 -2.59983,-0.905403 -2.32232,-2.280391 0.69062,0.606525 1.29914,0.436577 2.32232,-0.135926 m 0,2.416317 c 1.7872,0 2.59983,-0.905403 2.32232,-2.280391 -0.69062,0.606525 -1.29914,0.436577 -2.32232,-0.135926"
          sodipodi:nodetypes="ccc"
          inkscape:path-effect="#path-effect1035"
