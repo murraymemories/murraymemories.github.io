@@ -9,8 +9,9 @@ function Memories() {
     return (
         <div className="Memories">
         
+            <Clouds />
             <Top />
-
+            
             <MemoryList />
 
         </div>

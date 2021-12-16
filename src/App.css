@@ -6,6 +6,8 @@
 
 :root {
     font-size: clamp(0.5em, 3.6vmin, 2.5em);
+    --sunset: #fca644;
+    --silhouette: #202036;
 }
 
 img {
@@ -20,8 +22,6 @@ img {
     justify-content: center;
     justify-items: center;
     align-content: start;
-    --sunset: #fca644;
-    --silhouette: #202036;
     font-family: "Readex Pro", sans-serif;
     background: rgb(253,62,45);
     background: linear-gradient(0deg, rgba(253,62,45,1) -0%, rgba(233,143,59,1) 33%, rgba(183,218,216,1) 60%, rgba(34,193,195,1) 110%);
@@ -39,7 +39,7 @@ h1 {
     line-height: 3.2rem;
 }
 
-.App h1 {
+.App h1, .Memories h1 {
     color: var(--silhouette);
 }
 
@@ -139,6 +139,15 @@ svg {
     width: 100%;
     min-height: 100vh;
     text-align: center; 
+    background: rgba(34,193,195,1);
+}
+
+.Memories .clouds {
+    top: 0;
+    z-index: 1;
+    transform: none;
+    height: 10rem;
+    margin-bottom: -10rem;
 }
 
 .memory-list {
@@ -149,7 +158,6 @@ svg {
     margin-bottom: 2rem;
     list-style: none;
     max-width: 120rem;
-    /*overflow: hidden;*/
 }
 
 li {
@@ -168,19 +176,59 @@ li.loading {
     object-fit: cover;
     vertical-align: bottom;
     transform: scale(1.0);
-    transition: transform 0.2s;
+    /*transition: transform 0.2s;*/
     position: relative;
     top: 0;
     cursor: pointer;
 }
 
 .memory-list li img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    object-fit: contain;
     z-index: 1;
 }
 
+.memory-list li.add-photo {
+    min-width: 12rem;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.memory-list li.add-photo button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s;
+}
+
+.memory-list li.add-photo button:hover {
+    transform: scale(1.1);
+}
+
+.memory-list li.add-photo button:active {
+    transform: scale(1.0);
+}
+
+.memory-list li.add-photo button p {
+    font-family: "Readex Pro", sans-serif;
+    color: var(--silhouette);
+    font-size: 1rem;
+}
+
+.memory-list li.add-photo button svg {
+    height: 2.5rem;
+    margin-bottom: 0.6rem;
+    fill: transparent;
+    stroke: var(--silhouette);
+    stroke-width: 0.08;
+}
+
 .memory-list li:last-child {
-  flex-grow: 10;
+    flex-grow: 10;
 }
 
 .detail-card {

@@ -13,9 +13,9 @@ const randDur   = x => `${ ( 20 + 15*(x%1) ) * slowdown }s`;
 const randAnim  = x => { return { animationDelay    : `-${x}s`,
 			                      animationDuration : randDur(x) }; };
 
-const clouds = [ k => <Cloud1 key={k} style={randAnim(k)} className="cloud" />,
-                 k => <Cloud2 key={k} style={randAnim(k)} className="cloud" />,
-                 k => <Cloud3 key={k} style={randAnim(k)} className="cloud" /> ];
+const clouds = [ k => <Cloud1 key={k} style={ randAnim(k) } className="cloud" />,
+                 k => <Cloud2 key={k} style={ randAnim(k) } className="cloud" />,
+                 k => <Cloud3 key={k} style={ randAnim(k) } className="cloud" /> ];
 
 function Clouds() {
 
