@@ -155,7 +155,6 @@ svg {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
-    margin-bottom: 2rem;
     list-style: none;
     max-width: 120rem;
 }
@@ -173,6 +172,7 @@ li.loading {
     height: 100%;
     max-height: 100%;
     min-width: 100%;
+    max-width: 100vw;
     object-fit: cover;
     vertical-align: bottom;
     transform: scale(1.0);
@@ -188,7 +188,11 @@ li.loading {
     z-index: 1;
 }
 
-.memory-list li.add-photo {
+.memory-list li:last-child {
+    flex-grow: 10;
+}
+
+.add-photo {
     min-width: 12rem;
     display: grid;
     justify-content: center;
@@ -197,7 +201,7 @@ li.loading {
     cursor: pointer;
 }
 
-.memory-list li.add-photo button {
+.add-photo button {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -205,30 +209,30 @@ li.loading {
     transition: transform 0.2s;
 }
 
-.memory-list li.add-photo button:hover {
+.add-photo input {
+    display: none;
+}
+
+.add-photo button:hover {
     transform: scale(1.1);
 }
 
-.memory-list li.add-photo button:active {
+.add-photo button:active {
     transform: scale(1.0);
 }
 
-.memory-list li.add-photo button p {
+.add-photo button p {
     font-family: "Readex Pro", sans-serif;
     color: var(--silhouette);
     font-size: 1rem;
 }
 
-.memory-list li.add-photo button svg {
+.add-photo button svg {
     height: 2.5rem;
     margin-bottom: 0.6rem;
     fill: transparent;
     stroke: var(--silhouette);
     stroke-width: 0.08;
-}
-
-.memory-list li:last-child {
-    flex-grow: 10;
 }
 
 .detail-card {

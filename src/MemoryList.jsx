@@ -1,37 +1,17 @@
-import { range, rand, randText } from "./utility.jsx";
-import { useState, useEffect } from 'react';
+import { rand, randText } from "./utility.jsx";
 import MemoryImg from "./MemoryImg.jsx";
-import DetailCard from "./DetailCard.jsx";
-import AddPhoto from "./AddPhoto.jsx";
 
 
-function MemoryList() {
-
-	const dogUrl = "https://dog.ceo/api/breeds/image/random";
-
-	const [ srcs     , setSrcs      ] = useState( [] );
-	const [ detailObj, setDetailObj ] = useState( {} );
-
-	useEffect( () => { ( async () => {
-
-		const responses = await Promise.all( range(20).map( x => fetch(dogUrl) ) );
-		const messages  = await Promise.all( responses.map( r => r.json().then( j => j.message ) ) );
-		setSrcs( messages );
-
-	} )(); }, [] );
-
+function MemoryList( props ) {
 
     return (
 
     	<ul className="memory-list"> 
     		
-    		{ srcs.length
-    		? srcs.map( s => <MemoryImg key={ rand() } text={ randText(40) } src={ s } detailCallback={ setDetailObj } /> )
-    		: <li className="loading"> Loading... </li> }
-    		<AddPhoto onClick={ () => {} } />
+    		{ props.srcs.length
+    		? props.srcs.map( src => <MemoryImg key={ rand() } text={ randText(40) } src={ src } /> )
+    		: <li> Loading... </li> }
     		<li></li>
-
-    		{/*<DetailCard text={ detailObj.text } src={ detailObj.src } />*/}
     	</ul>
 
     );

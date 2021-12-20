@@ -8,7 +8,7 @@ const height   = Math.max( Math.max(document.documentElement.clientHeight || 0, 
 const aspect   = width / height;
 const slowdown = 1.4 * aspect + 0.6;
 
-const randDur   = x => `${ ( 20 + 15*(x%1) ) * slowdown }s`;
+const randDur   = x => `${ ( 15 + 20*(x%1) ) * slowdown }s`;
 
 const randAnim  = x => { return { animationDelay    : `-${x}s`,
 			                      animationDuration : randDur(x) }; };

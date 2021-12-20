@@ -11,7 +11,7 @@ function App() {
             <Top />
 
             <div id="links">
-                <a href="/memories"> Memories </a>
+                <a href="/memories"> Photo Album </a>
                 <a href="/familytree"> Family Tree </a>
                 <a href="/about"> About </a>
             </div>
