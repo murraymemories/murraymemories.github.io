@@ -98,8 +98,8 @@ svg {
     fill:#ff2200;
 }
 
-@media only screen and (max-width: 40rem) {
-    .app .hills {
+@media only screen and (max-width: 40rem) and (max-aspect-ratio: 1/1) {
+    .hills {
         margin-top: -3rem;
     }
 }
@@ -331,13 +331,16 @@ li.loading {
     justify-content: center;
     align-items: center;
     align-content: center;
+    z-index: 1;
+    position: relative;
 }
 
-.family-tree .tree {
+.tree {
     padding: 2rem;
     width: 40rem;
     max-width: 100vw;
     z-index: 1;
+    position: relative;
 }
 
 .family-tree .hills {
