@@ -13,10 +13,10 @@ function FamilyTree() {
 	               
             <Top />
             
-            <Tree />
+            <div id="tree-holder"> <Tree /> </div>
 
-            <Stars />
             <Hills />
+            <Stars />
             <Clouds />
             
 	    </div>
