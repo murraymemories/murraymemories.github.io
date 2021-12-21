@@ -13,7 +13,7 @@ function FamilyTree() {
 	               
             <Top />
             
-            <div id="tree-holder"> <Tree /> </div>
+            <div id="tree-holder"> <Tree /> <p> Rotate your screen for a better look! </p> </div>
 
             <Hills />
             <Stars />

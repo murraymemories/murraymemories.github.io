@@ -335,6 +335,19 @@ li.loading {
     position: relative;
 }
 
+#tree-holder p {
+    font-family: "Readex Pro", sans-serif;
+    height: 0;
+    transform: translateY(0rem);
+    font-size: 1.25rem;
+}
+
+@media only screen and (min-aspect-ratio: 3/4) {
+    #tree-holder p {
+        display: none;
+    }
+}
+
 .tree {
     padding: 2rem;
     width: 40rem;
