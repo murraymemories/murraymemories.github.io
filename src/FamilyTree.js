@@ -3,6 +3,7 @@ import Top from "./Top.js";
 import Stars from "./Stars.js";
 import Clouds from "./Clouds.js";
 import { ReactComponent as Hills } from './hills.svg';
+import { ReactComponent as Tree } from './family_tree.svg';
 
 
 function FamilyTree() {
@@ -12,10 +13,10 @@ function FamilyTree() {
 	               
             <Top />
             
-            <div></div>
+            <Tree />
 
-            <Hills />
             <Stars />
+            <Hills />
             <Clouds />
             
 	    </div>
