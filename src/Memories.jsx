@@ -21,6 +21,7 @@ function Memories() {
             <Clouds />
             <Top />
             
+            <AddPhoto callbackMaker={ callbackMaker } />
             <MemoryList srcs={ srcs } />
             <AddPhoto callbackMaker={ callbackMaker } />
 

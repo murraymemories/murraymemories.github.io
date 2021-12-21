@@ -154,14 +154,24 @@ svg {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
     list-style: none;
     max-width: 120rem;
 }
 
 li {
-    height: 10rem;
     flex-grow: 1;
+}
+
+@media only screen and (min-width: 50rem) {
+    li {
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 50rem) {
+    li {
+        width: 100vw;
+    }
 }
 
 li.loading {
@@ -193,6 +203,7 @@ li.loading {
 }
 
 .add-photo {
+    height: 9rem;
     min-width: 12rem;
     display: grid;
     justify-content: center;
