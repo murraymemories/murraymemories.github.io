@@ -21,9 +21,10 @@ const calcSlowdown = () => 1.4 * getWidth() / getHeight() + 0.6;
 
 function Clouds() {
 
-	const [ slowdown, setSlowdown ] = useState( calcSlowdown() );
+	// const [ slowdown, setSlowdown ] = useState( calcSlowdown() );
+	// new ResizeObserver( () => setSlowdown( calcSlowdown() ) ).observe( document.body );
 
-	window.addEventListener( "resize", () => setSlowdown( calcSlowdown() ) );
+	const slowdown = calcSlowdown();
 
 	return (
 	

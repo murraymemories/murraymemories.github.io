@@ -23,6 +23,7 @@ img {
     justify-items: center;
     align-content: start;
     font-family: "Readex Pro", sans-serif;
+    font-weight: 300;
     background: rgb(253,62,45);
     background: linear-gradient(0deg, rgba(253,62,45,1) -0%, rgba(233,143,59,1) 33%, rgba(183,218,216,1) 60%, rgba(34,193,195,1) 110%);
     width: 100%;
@@ -247,6 +248,7 @@ li.loading {
     fill: transparent;
     stroke: var(--silhouette);
     stroke-width: 0.08;
+    overflow: visible;
 }
 
 .detail-card {
@@ -333,6 +335,7 @@ li.loading {
     align-content: center;
     z-index: 1;
     position: relative;
+    pointer-events: none;
 }
 
 #tree-holder p {
